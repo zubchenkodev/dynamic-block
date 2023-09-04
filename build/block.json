@@ -1,18 +1,46 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "viktorias-blocks/boiler-plate",
-  "version": "0.1.0",
-  "title": "Boiler Plate",
-  "category": "widgets",
-  "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "name": "viktorias-blocks/dynamic-block",
+  "version": "0.1.1",
+  "title": "Dynamic block",
+  "category": "text",
+  "icon": "admin-post",
+  "description": "Dynamic block",
   "supports": {
     "html": false
   },
-  "textdomain": "boiler-plate",
+  "textdomain": "viktorias-blocks",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
-  "viewScript": "file:./view.js"
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "numberOfPosts": {
+      "type": "number",
+      "default": 3
+    },
+    "displayFeaturedImages": {
+      "type": "boolean",
+      "default": true
+    },
+    "numberOfColumns": {
+      "type": "number",
+      "default": 3
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "date"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
 }

@@ -1,1 +1,0 @@
-{"version":3,"file":"view.js","mappings":";;;;;AAAA;AACAA,OAAO,CAACC,GAAG,CAAE,qDAAsD,CAAC;AACpE,8B","sources":["webpack://boiler-plate/./src/view.js"],"sourcesContent":["/* eslint-disable no-console */\nconsole.log( 'Hello World! (from create-block-boiler-plate block)' );\n/* eslint-enable no-console */\n"],"names":["console","log"],"sourceRoot":""}
